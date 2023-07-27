@@ -6,6 +6,7 @@ let minhaListaDeItens = []
 
 
 
+
 function adcionarUmaNovaTarefa() {
     minhaListaDeItens.push({
         tarefa: input.value,

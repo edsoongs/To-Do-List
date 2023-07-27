@@ -18,6 +18,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin: 100px auto 0;
+    justify-content: space-around;
 }
 
 .input-task {
@@ -82,4 +83,12 @@ img {
 .done {
     background-color: #8fa855;
     text-decoration: line-through;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 500px;
+        flex-direction: column;
+    }
+    
 }
