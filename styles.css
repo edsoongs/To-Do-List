@@ -8,23 +8,31 @@
     outline: none;
 }
 
-
-body {
+.corpo {
     background: url("./img/background-checked.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
-.container {
+
+.box-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(228, 233, 232);
-    width: 500px;
+    width: 85%;
     border-radius: 10px;
     padding: 20px;
     margin: 100px auto 0;
-    justify-content: space-around;
 }
 
 .input-task {
     border: none;
     border-radius: 5px;
-    width: 150px;
+    width: calc(100% - 98px);
     height: 40px;
     padding-left: 10px;
     font-size: 15px;
@@ -41,6 +49,7 @@ body {
     float: right;
     cursor: pointer;
     font-weight: 500;
+    width: 88px
 }
 
 .button-add-task:hover {
@@ -52,7 +61,7 @@ body {
 }
 
 .list-tasks {
-    width: 100%;
+    width: 50%;
     list-style: none;
     margin-top: 30px;
 }
@@ -85,19 +94,30 @@ img {
     text-decoration: line-through;
 }
 
-@media screen and (max-width: 768px){
+
+/* @media screen and (max-width: 768px){
     .container{
         width: 500px;
         flex-direction: column;
     }
-    
-}
+} */
 
 @media screen and (max-width: 600px) {
-    .container {
-      width: 100%;
+    .box-input {
       flex-direction: column;
     }
 
+    .input-task {
+        width: 100%;
+    }
+    
+    .button-add-task {
+        margin-top: 10px;
+    }
+
+    .list-tasks {
+       width: 90%;
+    }
+    
 }
 
