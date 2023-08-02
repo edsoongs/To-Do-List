@@ -23,7 +23,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgb(228, 233, 232);
-    width: 85%;
+    width: 50%;
     border-radius: 10px;
     padding: 20px;
     margin: 100px auto 0;
@@ -32,7 +32,7 @@
 .input-task {
     border: none;
     border-radius: 5px;
-    width: calc(100% - 98px);
+    width: calc(80% - 98px);
     height: 40px;
     padding-left: 10px;
     font-size: 15px;
@@ -79,7 +79,7 @@
 }
 
 img {
-    height: 25px;
+    height: 28px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     cursor: pointer;

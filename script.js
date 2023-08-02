@@ -7,7 +7,7 @@ let minhaListaDeItens = []
 
 
 
-function adcionarUmaNovaTarefa() {
+function incluirUmaNovaTarefa() {
     minhaListaDeItens.push({
         tarefa: input.value,
         concluida: false
@@ -19,6 +19,8 @@ function adcionarUmaNovaTarefa() {
 
 
 }
+
+
 
 
 function mostrarTarefas() {
@@ -74,4 +76,4 @@ function recarregarTarefas() {
 
 
 recarregarTarefas()
-button.addEventListener('click', adcionarUmaNovaTarefa)
+button.addEventListener('click', incluirUmaNovaTarefa)
