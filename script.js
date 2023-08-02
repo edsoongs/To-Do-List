@@ -21,8 +21,6 @@ function incluirUmaNovaTarefa() {
 }
 
 
-
-
 function mostrarTarefas() {
 
     let novaLi = ''
